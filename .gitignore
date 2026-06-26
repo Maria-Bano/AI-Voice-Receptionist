@@ -1,0 +1,39 @@
+# Environment files
+
+.env
+.env.*
+
+# Credentials & secrets
+
+credentials/
+secrets/
+*.pem
+*.key
+
+# n8n exports (keep private)
+
+*.json
+
+# Logs
+
+*.log
+logs/
+
+# Node
+
+node_modules/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE
+
+.vscode/
+.idea/
+
+# Temporary files
+
+tmp/
+temp/
