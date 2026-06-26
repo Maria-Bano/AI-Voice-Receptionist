@@ -1,0 +1,33 @@
+# Repository Type
+
+Portfolio repository for an AI Automation Engineer.
+
+# Goals
+
+* Impress recruiters and clients.
+* Showcase architecture and engineering decisions.
+* Protect proprietary implementation.
+
+# Never Generate
+
+* Production n8n workflow JSON
+* API keys
+* Credentials
+* Secrets
+* Proprietary prompts
+* Customer data
+
+# Prefer
+
+* Documentation
+* Mermaid diagrams
+* Architecture images
+* Screenshots
+* Case studies
+* Demo assets
+
+# Working Style
+
+Work step-by-step.
+Ask before major file changes.
+Generate production-quality documentation.
