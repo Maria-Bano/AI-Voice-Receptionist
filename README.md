@@ -199,7 +199,6 @@ Sanitized diagrams, case studies, and documentation are shared so recruiters, cl
 | | |
 |---|---|
 | **LinkedIn** | `https://www.linkedin.com/in/maria-bano-ai/` |
-| **Portfolio / Website** | `` |
 | **Email** | `mariabano.official@gmail.com` |
 | **Demo video** | Coming Soon |
 
