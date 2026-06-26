@@ -198,10 +198,9 @@ Sanitized diagrams, case studies, and documentation are shared so recruiters, cl
 
 | | |
 |---|---|
-| **LinkedIn** | `[Your LinkedIn URL]` |
-| **Portfolio / Website** | `[Your website URL]` |
-| **Email** | `[your.email@example.com]` |
-| **Upwork / Freelance** | `[Your profile URL]` |
+| **LinkedIn** | `https://www.linkedin.com/in/maria-bano-ai/` |
+| **Portfolio / Website** | `` |
+| **Email** | `mariabano.official@gmail.com` |
 | **Demo video** | Coming Soon |
 
 ---
