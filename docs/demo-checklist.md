@@ -77,7 +77,7 @@
 
 | # | Asset | Filename | Status | Notes |
 |---|-------|----------|--------|-------|
-| 10 | High-level architecture (rendered) | `assets/architecture-overview.png` | ⬜ | Export from Mermaid or design tool |
+| 10 | High-level architecture (rendered) | `assets/architecture-overview.png` | ✅ | Used in README |
 | 11 | Booking sequence diagram (rendered) | `screenshots/diagram-booking-sequence.png` | ⬜ | Optional — Mermaid in docs may suffice |
 | 12 | RAG workflow diagram (rendered) | `screenshots/diagram-rag-workflow.png` | ⬜ | Optional |
 | 13 | Data flow diagram (rendered) | `screenshots/diagram-data-flow.png` | ⬜ | Optional |
@@ -93,7 +93,7 @@
 | # | Asset | Filename | Status | Notes |
 |---|-------|----------|--------|-------|
 | 14 | Full system demo (voice → availability → booking) | `demo/AI-Voice-Receptionist-Demo.mp4` | ✅ | ~37 MB; in-repo; optional YouTube/Loom for external sharing |
-| 15 | Demo thumbnail | `assets/demo-thumbnail.png` | ⬜ | Used for video embed and README |
+| 15 | Demo thumbnail | `assets/demo-thumbnail.png` | ✅ | Links to LinkedIn demo in README |
 
 **Content outline:**
 
@@ -190,7 +190,7 @@ Once assets are ready, update these locations:
 5. Sanitized n8n workflow screenshot
 6. GIFs (guest interaction, workflow execution)
 7. Demo videos (booking flow → policy Q&A → full walkthrough)
-8. Update README placeholders with live links
+8. Share LinkedIn demo link in outreach and profile README
 
 ---
 

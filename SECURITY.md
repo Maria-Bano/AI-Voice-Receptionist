@@ -67,7 +67,7 @@ If you discover a security issue related to this repository — including accide
 ### How to report
 
 1. **Do not** open a public GitHub issue for security-sensitive findings
-2. Email the maintainer directly at: `[your.email@example.com]` <!-- Replace before publish -->
+2. Email the maintainer directly at: **mariabano.official@gmail.com**
 3. Include:
    - Description of the issue
    - Steps to reproduce (if applicable)
@@ -114,6 +114,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Contact
 
-**Security reports:** `[your.email@example.com]` <!-- Replace before publish -->
+**Security reports:** mariabano.official@gmail.com
 
 **General inquiries:** See [README.md](README.md#contact)

@@ -9,13 +9,13 @@
 
 > Use for: recruiter screens, Upwork intro calls, LinkedIn conversations
 
-"I built an AI Voice Receptionist for hotel front-desk operations. Guests call and speak naturally ó the system handles room availability, policy questions, and booking requests.
+"I built an AI Voice Receptionist for hotel front-desk operations. Guests call and speak naturally ù the system handles room availability, policy questions, and booking requests.
 
 The key design choice is that the voice agent doesn't guess operational data. It uses MCP-style tool calls to check live inventory in Google Sheets, retrieve policy answers through a RAG pipeline, and trigger booking workflows in n8n.
 
 So when a guest asks about a room, the agent checks real availability, handles guest count, suggests alternatives if needed, and can create a reservation end-to-end.
 
-It's a production-style architecture ó voice layer, tool orchestration, live data, knowledge retrieval, and workflow automation ó documented as a public portfolio repo without exposing proprietary prompts or credentials."
+It's a production-style architecture ù voice layer, tool orchestration, live data, knowledge retrieval, and workflow automation ù documented as a public portfolio repo without exposing proprietary prompts or credentials."
 
 ---
 
@@ -25,17 +25,17 @@ It's a production-style architecture ó voice layer, tool orchestration, live dat
 
 ### 1. Problem (45 sec)
 
-"Hotel front desks handle repetitive, time-sensitive work ó availability checks, policy questions, bookings. Static chatbots fail because inventory changes and policies update. I designed a system that automates voice interactions while staying grounded in live operational data."
+"Hotel front desks handle repetitive, time-sensitive work ù availability checks, policy questions, bookings. Static chatbots fail because inventory changes and policies update. I designed a system that automates voice interactions while staying grounded in live operational data."
 
 ### 2. Architecture (90 sec)
 
 "The architecture has five layers:
 
-1. **Vapi** handles voice ó natural guest conversation.
+1. **Vapi** handles voice ù natural guest conversation.
 2. **MCP-style tools** route intent to backend capabilities with structured contracts.
 3. **Availability engine** reads Google Sheets, validates dates, checks conflicts.
 4. **RAG pipeline** answers policy questions from maintained documents.
-5. **n8n workflows** record bookings and trigger downstream actions ó confirmations, CRM updates.
+5. **n8n workflows** record bookings and trigger downstream actions ù confirmations, CRM updates.
 
 The voice agent never computes availability itself. It calls tools and narrates structured results."
 
@@ -45,11 +45,11 @@ The voice agent never computes availability itself. It calls tools and narrates 
 
 ### 4. Why it matters (45 sec)
 
-"This isn't a chatbot demo. It shows how to build AI automation for operations ó tool orchestration, live data, maintainable knowledge, integration depth. The public repo documents architecture and decisions; production workflows and prompts stay private."
+"This isn't a chatbot demo. It shows how to build AI automation for operations ù tool orchestration, live data, maintainable knowledge, integration depth. The public repo documents architecture and decisions; production workflows and prompts stay private."
 
 ### 5. Close (30 sec)
 
-"I'd point you to the README architecture diagram, the case study, and the demo video. Happy to go deeper on any layer ó RAG, tool design, or workflow automation."
+"I'd point you to the README architecture diagram, the case study, and the demo video. Happy to go deeper on any layer ù RAG, tool design, or workflow automation."
 
 ---
 
@@ -83,8 +83,8 @@ The voice agent never computes availability itself. It calls tools and narrates 
 
 ### Example artifacts to reference
 
-- [examples/tool-contract-example.md](../examples/tool-contract-example.md) ó fictional tool schemas
-- [docs/architecture.md](architecture.md) ó Mermaid diagrams for whiteboarding
+- [examples/tool-contract-example.md](../examples/tool-contract-example.md) ù fictional tool schemas
+- [docs/architecture.md](architecture.md) ù Mermaid diagrams for whiteboarding
 
 ---
 
@@ -92,11 +92,11 @@ The voice agent never computes availability itself. It calls tools and narrates 
 
 | Question | Suggested answer |
 |----------|------------------|
-| **What did you build?** | AI voice receptionist for hotels ó availability, policies, bookings via tool-orchestrated backend. |
+| **What did you build?** | AI voice receptionist for hotels ù availability, policies, bookings via tool-orchestrated backend. |
 | **What technologies?** | Vapi, n8n, Google Sheets, RAG, MCP-style tools, API integrations. |
 | **Is this production?** | Production-style architecture and patterns; public repo is documentation portfolio; implementation details are private. |
-| **What's your role?** | End-to-end AI automation ó agent design, tool contracts, workflow automation, integration architecture. |
-| **Can I see it work?** | Yes ó demo video in `demo/AI-Voice-Receptionist-Demo.mp4` and README Demo section. |
+| **What's your role?** | End-to-end AI automation ù agent design, tool contracts, workflow automation, integration architecture. |
+| **Can I see it work?** | Yes ù [LinkedIn demo](https://www.linkedin.com/feed/update/urn:li:activity:7476686387690455043/) and [README](../README.md#demo). |
 | **Why not open-source the code?** | Proprietary workflows and business logic; architecture and case study demonstrate capability without IP exposure. |
 | **What makes this different from a chatbot?** | Live inventory, tool orchestration, RAG maintainability, downstream workflow automation. |
 
@@ -131,10 +131,11 @@ The voice agent never computes availability itself. It calls tools and narrates 
 
 ## Quick Links for Screen Share
 
-1. [README](../README.md) ó entry point and demo
-2. [CASE_STUDY.md](../CASE_STUDY.md) ó narrative for non-technical stakeholders
-3. [docs/architecture.md](architecture.md) ó diagrams for technical audience
-4. [demo/AI-Voice-Receptionist-Demo.mp4](../demo/AI-Voice-Receptionist-Demo.mp4) ó live demonstration
+1. [README](../README.md) - entry point and demo
+2. [CASE_STUDY.md](../CASE_STUDY.md) - narrative for non-technical stakeholders
+3. [docs/architecture.md](architecture.md) - diagrams for technical audience
+4. [LinkedIn demo](https://www.linkedin.com/feed/update/urn:li:activity:7476686387690455043/) - primary walkthrough
+5. [demo/AI-Voice-Receptionist-Demo.mp4](../demo/AI-Voice-Receptionist-Demo.mp4) - archival download
 
 ---
 

@@ -244,7 +244,7 @@ This case study describes architecture and engineering decisions. It does not in
 - Full proprietary business logic
 
 For technical depth, see [docs/architecture.md](docs/architecture.md).  
-For the demo video, see [demo/AI-Voice-Receptionist-Demo.mp4](demo/AI-Voice-Receptionist-Demo.mp4).  
+For the demo video, see the [LinkedIn walkthrough](https://www.linkedin.com/feed/update/urn:li:activity:7476686387690455043/) or [demo/AI-Voice-Receptionist-Demo.mp4](demo/AI-Voice-Receptionist-Demo.mp4) (archival).  
 For interview prep, see [docs/interview-talking-points.md](docs/interview-talking-points.md).
 
 ---

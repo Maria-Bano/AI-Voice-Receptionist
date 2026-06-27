@@ -6,18 +6,18 @@ Sanitized screenshots for the AI Voice Receptionist portfolio repository.
 
 | File | Source | Status |
 |------|--------|--------|
-| `vapi-agent-overview.png` | Vapi dashboard (sanitized) | Coming Soon |
-| `vapi-tools-overview.png` | Vapi tool configuration (sanitized) | Coming Soon |
-| `vapi-call-summary.png` | Call log with redacted PII | Coming Soon |
-| `n8n-workflow-overview.png` | n8n workflow canvas (no credentials) | Coming Soon |
-| `n8n-booking-flow.png` | Booking workflow segment | Coming Soon |
-| `n8n-integration-node.png` | Integration node (sanitized) | Coming Soon |
-| `sheets-inventory.png` | Fictional inventory data | Coming Soon |
-| `sheets-reservations.png` | Fictional reservation log | Coming Soon |
-| `sheets-availability.png` | Availability status view | Coming Soon |
-| `diagram-booking-sequence.png` | Rendered sequence diagram (optional) | Coming Soon |
-| `diagram-rag-workflow.png` | Rendered RAG diagram (optional) | Coming Soon |
-| `diagram-data-flow.png` | Rendered data flow diagram (optional) | Coming Soon |
+| `vapi-agent-overview.png` | Vapi dashboard (sanitized) | Planned |
+| `vapi-tools-overview.png` | Vapi tool configuration (sanitized) | Planned |
+| `vapi-call-summary.png` | Call log with redacted PII | Planned |
+| `n8n-workflow-overview.png` | n8n workflow canvas (no credentials) | Planned |
+| `n8n-booking-flow.png` | Booking workflow segment | Planned |
+| `n8n-integration-node.png` | Integration node (sanitized) | Planned |
+| `sheets-inventory.png` | Fictional inventory data | Planned |
+| `sheets-reservations.png` | Fictional reservation log | Planned |
+| `sheets-availability.png` | Availability status view | Planned |
+| `diagram-booking-sequence.png` | Rendered sequence diagram (optional) | Planned |
+| `diagram-rag-workflow.png` | Rendered RAG diagram (optional) | Planned |
+| `diagram-data-flow.png` | Rendered data flow diagram (optional) | Planned |
 
 ## Sanitization Rules
 

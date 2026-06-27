@@ -4,17 +4,22 @@ End-to-end demonstration of the AI Voice Receptionist for hotel operations.
 
 ---
 
-## Primary Demo Video
+## Primary Demo (LinkedIn)
+
+**Watch the full demo:**  
+https://www.linkedin.com/feed/update/urn:li:activity:7476686387690455043/
+
+The LinkedIn post is the primary demo link for recruiters, clients, and portfolio sharing.
+
+---
+
+## Demo Video Archive
 
 | File | Size | Description |
 |------|------|-------------|
-| [`AI-Voice-Receptionist-Demo.mp4`](AI-Voice-Receptionist-Demo.mp4) | ~37 MB | Full end-to-end walkthrough |
+| [`AI-Voice-Receptionist-Demo.mp4`](AI-Voice-Receptionist-Demo.mp4) | ~37 MB | Full end-to-end walkthrough (archival copy in repo) |
 
-### Watch on GitHub
-
-Open the file above directly in this repository — GitHub provides in-browser video playback for MP4 files.
-
-**README link:** [`demo/AI-Voice-Receptionist-Demo.mp4`](AI-Voice-Receptionist-Demo.mp4)
+GitHub supports in-browser playback when opening the MP4 file directly. This copy is kept for archival purposes — the LinkedIn post is the recommended link for sharing.
 
 ---
 
@@ -29,30 +34,14 @@ Open the file above directly in this repository — GitHub provides in-browser v
 
 ---
 
-## Hosting Options
-
-GitHub README does **not** support embedded video players. Use one of these approaches:
-
-| Method | When to use | How |
-|--------|-------------|-----|
-| **In-repo MP4** (current) | Portfolio simplicity; file under 100 MB | Link directly to `demo/AI-Voice-Receptionist-Demo.mp4` |
-| **GitHub Release** | Prefer not to bloat repo clone size | Create a Release → attach MP4 → link from README |
-| **YouTube (Unlisted)** | Best for recruiters & LinkedIn sharing | Upload → replace README `[Watch Demo]` link |
-| **Loom** | Quick client/recruiter follow-ups | Record/share → paste Loom URL in README |
-
-**Recommendation:** Keep the in-repo copy for GitHub visitors. Add a YouTube Unlisted or Loom link in README for smoother streaming when sharing externally.
-
----
-
 ## Thumbnail
 
-Clickable preview for README: [`assets/demo-thumbnail.svg`](../assets/demo-thumbnail.svg)
-
-Replace with a captured video frame: `assets/demo-thumbnail.png` (1280×720)
+README demo thumbnail: [`assets/demo-thumbnail.png`](../assets/demo-thumbnail.png)  
+Links to the LinkedIn demo post.
 
 ---
 
-## Before Publishing / Sharing
+## Before Sharing
 
 All demo media must be sanitized. See **[docs/demo-checklist.md](../docs/demo-checklist.md)**.
 
