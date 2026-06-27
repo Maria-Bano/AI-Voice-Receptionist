@@ -10,7 +10,12 @@
 [![API Integrations](https://img.shields.io/badge/API-Integrations-6C5CE7?style=for-the-badge)](#)
 [![Portfolio Project](https://img.shields.io/badge/Portfolio-Case%20Study-1A1A2E?style=for-the-badge)](#)
 
-![Architecture Banner](assets/banner.png)
+[![Documentation](https://img.shields.io/badge/Docs-Complete-success?style=flat-square)](#documentation)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square)](LICENSE)
+[![Case Study](https://img.shields.io/badge/Case%20Study-Available-blue?style=flat-square)](CASE_STUDY.md)
+[![Demo Video](https://img.shields.io/badge/Demo%20Video-Available-red?style=flat-square)](#demo)
+
+![Architecture Banner](assets/banner.svg)
 
 ---
 
@@ -27,6 +32,30 @@
 
 ---
 
+## Demo
+
+🎥 **Watch the end-to-end AI Voice Receptionist demo:**
+
+[![Watch Demo](assets/demo-thumbnail.svg)](demo/AI-Voice-Receptionist-Demo.mp4)
+
+**[Watch Demo →](demo/AI-Voice-Receptionist-Demo.mp4)**
+
+> GitHub does not embed video in README. Click the thumbnail or link above to play in-browser.  
+> For external sharing, upload to [YouTube (Unlisted)](https://youtube.com) or [Loom](https://loom.com) and replace this link. See [demo/README.md](demo/README.md).
+
+**The demo showcases:**
+
+- Room discovery
+- Availability checks
+- Guest count handling
+- Alternative room suggestions
+- Reservation creation
+- End-to-end workflow automation
+
+![Workflow Overview](assets/workflow-overview.svg)
+
+---
+
 ## Problem Statement
 
 Hotel front desks handle high-volume, time-sensitive work: policy questions, availability checks, and booking actions that must stay accurate as inventory changes.
@@ -40,6 +69,8 @@ This project demonstrates a **production-minded alternative**: a voice agent bac
 ## Architecture Overview
 
 The system separates **conversational interaction** from **operational backend actions**. The voice agent handles natural dialogue; MCP-style tool calls route work to the right backend systems.
+
+![Architecture Overview](assets/architecture-overview.svg)
 
 ```mermaid
 flowchart TD
@@ -67,54 +98,40 @@ Full architecture documentation: **[docs/architecture.md](docs/architecture.md)*
 
 ---
 
-## Demo
+## Skills Demonstrated
 
-> Visual assets are in progress. Placeholders below will be replaced with sanitized portfolio media.
+[![AI Agent Development](https://img.shields.io/badge/AI%20Agent-Development-FF6B35?style=flat-square)](#)
+[![Voice AI](https://img.shields.io/badge/Voice-AI-5B4FFF?style=flat-square)](#)
+[![Workflow Automation](https://img.shields.io/badge/Workflow-Automation-EA4B71?style=flat-square)](#)
+[![System Design](https://img.shields.io/badge/System-Design-00C896?style=flat-square)](#)
+[![RAG Pipelines](https://img.shields.io/badge/RAG-Pipelines-2D9CDB?style=flat-square)](#)
+[![API Integrations](https://img.shields.io/badge/API-Integrations-6C5CE7?style=flat-square)](#)
+[![Data Orchestration](https://img.shields.io/badge/Data-Orchestration-1A1A2E?style=flat-square)](#)
+[![Production Architecture](https://img.shields.io/badge/Production-Architecture-64748B?style=flat-square)](#)
 
-| Asset | Status |
-|-------|--------|
-| **Demo video** | Coming Soon — end-to-end voice interaction walkthrough |
-| **Screenshots** | Coming Soon — architecture views, workflow overview, inventory interface |
-| **Workflow GIF** | Coming Soon — guest inquiry → availability check → booking flow |
-
-Asset checklist: **[docs/demo-checklist.md](docs/demo-checklist.md)**
-
----
-
-## Engineering Skills Demonstrated
-
-- **AI Agent Development** — conversational agent design with structured tool invocation
-- **Voice AI Systems** — natural guest interaction via Vapi
-- **Workflow Automation** — multi-step booking and follow-up flows via n8n
-- **System Design** — decoupled architecture separating voice, data, knowledge, and automation layers
-- **API Integrations** — connectivity to operational systems, CRM, and downstream services
-- **RAG Pipelines** — document-driven knowledge retrieval without model retraining
-- **Data Orchestration** — live inventory reads, writes, and validation across connected data sources
-- **Production Architecture** — reliability-focused design with structured outputs and integration-ready workflows
+| Skill | Evidence |
+|-------|----------|
+| **AI Agent Development** | Vapi voice agent with structured tool invocation |
+| **Voice AI Systems** | Natural guest interaction for availability and booking |
+| **Workflow Automation** | n8n multi-step booking and integration flows |
+| **System Design** | Decoupled voice, data, knowledge, and automation layers |
+| **API Integrations** | CRM, confirmation, and database connectivity |
+| **RAG Pipelines** | Document-driven policy retrieval without retraining |
+| **Data Orchestration** | Live inventory reads, writes, and validation |
+| **Production Architecture** | Reliability patterns, security boundaries, portfolio discipline |
 
 ---
 
-## Key Capabilities
+## Key Engineering Decisions
 
-| Capability | How It's Handled |
-|------------|------------------|
-| Voice guest interaction | Vapi voice agent |
-| Live room availability | Availability engine + Google Sheets inventory |
-| Policy & FAQ answers | RAG pipeline over maintainable documents |
-| Reservation workflows | Tool-triggered validation, recording, and follow-up |
-| Downstream automation | n8n workflows and API integrations |
+- **Tool orchestration over end-to-end LLM** — operational truth lives in backend systems, not generated text
+- **MCP-style tool contracts** — clear agent-to-backend boundary with structured I/O
+- **Live inventory validation** — availability checked against current data and pending reservations
+- **RAG for policies** — document updates propagate without redeployment or model retraining
+- **Re-validate before booking write** — conflict check at confirmation time, not just inquiry
+- **Portfolio-only public repo** — architecture shared; proprietary workflows and prompts protected
 
----
-
-## Challenges Solved
-
-| Challenge | Approach |
-|-----------|----------|
-| **Preventing stale inventory responses** | Real-time availability engine validates against live Sheets data and existing reservations before responding |
-| **Separating conversational AI from backend actions** | MCP-style tool orchestration — the voice layer handles dialogue; tools handle operational logic |
-| **Maintaining knowledge without retraining** | RAG pipeline retrieves answers from updated documents — no prompt rewrites or model retraining required |
-| **Supporting downstream integrations** | Structured workflow outputs trigger confirmations, CRM updates, and database actions via n8n and APIs |
-| **Designing for reliability and maintainability** | Clear component boundaries, structured tool responses, and document-driven knowledge reduce fragility over time |
+See [examples/tool-contract-example.md](examples/tool-contract-example.md) for fictional tool contract illustrations.
 
 ---
 
@@ -122,13 +139,15 @@ Asset checklist: **[docs/demo-checklist.md](docs/demo-checklist.md)**
 
 This is not a simple chatbot demo. It reflects how AI automation is built for **real operational environments**:
 
-- **Live data dependency** — availability answers are grounded in current inventory, not static training data
+- **Live data dependency** — availability answers grounded in current inventory, not static training data
 - **Tool orchestration** — the agent acts through defined backend capabilities, not open-ended generation
-- **Maintainable knowledge** — business policies update through documents, matching how operations teams actually work
+- **Maintainable knowledge** — business policies update through documents, matching how operations teams work
 - **Integration depth** — booking flows connect to downstream systems, not isolated conversation endpoints
-- **Production boundaries** — architecture and decisions are documented; proprietary implementation stays protected
+- **Production boundaries** — architecture documented publicly; proprietary implementation stays private
 
 For recruiters, clients, and hiring managers, this project signals the ability to design **end-to-end AI systems** — not just prompt engineering.
+
+**Interview prep:** [docs/interview-talking-points.md](docs/interview-talking-points.md)
 
 ---
 
@@ -138,7 +157,7 @@ For recruiters, clients, and hiring managers, this project signals the ability t
 - **Reduced staff load** — automation absorbs repetitive availability and policy questions
 - **Lower double-booking risk** — live validation against inventory and pending reservations
 - **Faster guest response** — immediate voice answers instead of hold queues or callbacks
-- **Maintainable operations** — policy and FAQ updates via documents without code changes
+- **Maintainable operations** — policy updates via documents without code changes
 - **Integration-ready outputs** — structured workflow results support CRM, email, and database actions
 
 ---
@@ -163,8 +182,12 @@ For recruiters, clients, and hiring managers, this project signals the ability t
 |----------|-------------|
 | [CASE_STUDY.md](CASE_STUDY.md) | Full project narrative for recruiters and clients |
 | [docs/architecture.md](docs/architecture.md) | System design, components, and detailed diagrams |
+| [docs/interview-talking-points.md](docs/interview-talking-points.md) | 2-min, 5-min, and technical interview scripts |
+| [docs/github-profile-setup.md](docs/github-profile-setup.md) | Pin repo, topics, LinkedIn post, profile bio |
 | [docs/demo-checklist.md](docs/demo-checklist.md) | Screenshot and demo asset checklist |
-| [assets/](assets/) | Banners, badges, and profile visual assets |
+| [examples/tool-contract-example.md](examples/tool-contract-example.md) | Fictional MCP-style tool contracts |
+| [assets/](assets/) | Banners, diagrams, and profile visual assets |
+| [demo/](demo/) | Demo video and hosting guidance |
 
 ---
 
@@ -184,6 +207,7 @@ This repository intentionally excludes:
 
 - Production n8n workflow exports
 - API keys and credentials
+- Webhook URLs
 - Proprietary prompts and tuning details
 - Proprietary business logic
 - Customer or operational data
@@ -194,16 +218,16 @@ Sanitized diagrams, case studies, and documentation are shared so recruiters, cl
 
 ## Contact
 
-<!-- Replace placeholders before publishing -->
-
 | | |
 |---|---|
-| **LinkedIn** | `https://www.linkedin.com/in/maria-bano-ai/` |
-| **Email** | `mariabano.official@gmail.com` |
-| **Demo video** | Coming Soon |
+| **LinkedIn** | [linkedin.com/in/maria-bano-ai](https://www.linkedin.com/in/maria-bano-ai/) |
+| **Email** | mariabano.official@gmail.com |
+| **Demo video** | [demo/AI-Voice-Receptionist-Demo.mp4](demo/AI-Voice-Receptionist-Demo.mp4) |
+
+**GitHub profile setup:** [docs/github-profile-setup.md](docs/github-profile-setup.md)
 
 ---
 
 ## License & Usage
 
-Documentation and diagrams are shared for portfolio and evaluation purposes. Production implementation details remain private.
+Documentation and diagrams are licensed under [CC BY 4.0](LICENSE). Production implementation details remain private.

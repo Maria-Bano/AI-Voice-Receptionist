@@ -1,0 +1,15 @@
+{
+  "_comment": "Fictional example only. No real endpoints, credentials, or production data.",
+  "request_type": "check_room_availability",
+  "payload": {
+    "check_in_date": "2026-07-15",
+    "check_out_date": "2026-07-18",
+    "guest_count": 2,
+    "room_type_preference": "deluxe_king"
+  },
+  "metadata": {
+    "session_id": "demo-session-001",
+    "property_id": "hotel-demo-property",
+    "requested_at": "2026-06-26T14:30:00Z"
+  }
+}

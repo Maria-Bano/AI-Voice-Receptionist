@@ -1,26 +1,60 @@
 # Demo
 
-Video and GIF assets for the AI Voice Receptionist portfolio.
+End-to-end demonstration of the AI Voice Receptionist for hotel operations.
 
-## Planned Assets
+---
 
-| File | Description | Status |
-|------|-------------|--------|
-| `walkthrough.mp4` | End-to-end system demo | Coming Soon |
-| `booking-flow.mp4` | Availability check through booking confirmation | Coming Soon |
-| `policy-qa.mp4` | RAG-powered policy Q&A demonstration | Coming Soon |
-| `guest-interaction.gif` | Voice interaction loop | Coming Soon |
-| `workflow-execution.gif` | n8n workflow execution (sanitized) | Coming Soon |
+## Primary Demo Video
+
+| File | Size | Description |
+|------|------|-------------|
+| [`AI-Voice-Receptionist-Demo.mp4`](AI-Voice-Receptionist-Demo.mp4) | ~37 MB | Full end-to-end walkthrough |
+
+### Watch on GitHub
+
+Open the file above directly in this repository — GitHub provides in-browser video playback for MP4 files.
+
+**README link:** [`demo/AI-Voice-Receptionist-Demo.mp4`](AI-Voice-Receptionist-Demo.mp4)
+
+---
+
+## What the Demo Showcases
+
+- Room discovery
+- Live availability checks
+- Guest count handling
+- Alternative room suggestions
+- Reservation creation
+- End-to-end workflow automation
+
+---
 
 ## Hosting Options
 
-- **YouTube** — best for portfolio visibility and README embeds
-- **Loom** — fast to record; good for client/recruiter sharing
-- **GitHub Releases** — attach MP4 if file size is manageable (prefer external hosting for large files)
+GitHub README does **not** support embedded video players. Use one of these approaches:
 
-## Before Publishing
+| Method | When to use | How |
+|--------|-------------|-----|
+| **In-repo MP4** (current) | Portfolio simplicity; file under 100 MB | Link directly to `demo/AI-Voice-Receptionist-Demo.mp4` |
+| **GitHub Release** | Prefer not to bloat repo clone size | Create a Release → attach MP4 → link from README |
+| **YouTube (Unlisted)** | Best for recruiters & LinkedIn sharing | Upload → replace README `[Watch Demo]` link |
+| **Loom** | Quick client/recruiter follow-ups | Record/share → paste Loom URL in README |
 
-All demo media must be sanitized. See the checklist in **[docs/demo-checklist.md](../docs/demo-checklist.md)**.
+**Recommendation:** Keep the in-repo copy for GitHub visitors. Add a YouTube Unlisted or Loom link in README for smoother streaming when sharing externally.
+
+---
+
+## Thumbnail
+
+Clickable preview for README: [`assets/demo-thumbnail.svg`](../assets/demo-thumbnail.svg)
+
+Replace with a captured video frame: `assets/demo-thumbnail.png` (1280×720)
+
+---
+
+## Before Publishing / Sharing
+
+All demo media must be sanitized. See **[docs/demo-checklist.md](../docs/demo-checklist.md)**.
 
 **Never include in demo recordings:**
 
@@ -30,11 +64,10 @@ All demo media must be sanitized. See the checklist in **[docs/demo-checklist.md
 - Real guest or customer data
 - Unredacted production dashboard details
 
-## Thumbnail
-
-Demo thumbnail: `assets/demo-thumbnail.png` (see [assets/README.md](../assets/README.md) for generation instructions)
+---
 
 ## Related
 
 - [README Demo section](../README.md#demo)
+- [Interview talking points](../docs/interview-talking-points.md)
 - [Demo checklist](../docs/demo-checklist.md)

@@ -2,115 +2,96 @@
 
 Visual assets for the AI Voice Receptionist portfolio repository.
 
-## Placeholder Files
+---
 
-| File | Purpose | Status |
-|------|---------|--------|
-| `banner.png` | README hero banner | ⬜ Placeholder — generate before publish |
-| `architecture-overview.png` | Architecture section visual | ⬜ Placeholder — generate before publish |
-| `demo-thumbnail.png` | Video thumbnail and README demo section | ⬜ Placeholder — generate before publish |
-| `github-social-preview.png` | GitHub repository social preview (1280×640) | ⬜ Placeholder — generate before publish |
+## Current Assets
 
-> **Note:** Binary image files are not committed as placeholders. Add generated PNGs to this folder when ready. Until then, README references serve as placement markers.
+| File | Type | Purpose | Status |
+|------|------|---------|--------|
+| `banner.svg` | SVG placeholder | README hero banner | ✅ In repo — replace with PNG when ready |
+| `github-social-preview.svg` | SVG placeholder | GitHub social preview (1280×640) | ✅ In repo — export to PNG & upload to Settings |
+| `architecture-overview.svg` | SVG placeholder | Architecture section visual | ✅ In repo — replace with Mermaid export PNG |
+| `workflow-overview.svg` | SVG placeholder | Demo / workflow section visual | ✅ In repo — replace with sanitized n8n screenshot |
+| `demo-thumbnail.svg` | SVG placeholder | Demo video thumbnail | ✅ In repo — replace with video frame capture |
+| `banner.png` | PNG target | Final hero banner | ⬜ Generate from SVG or Canva |
+| `github-social-preview.png` | PNG target | GitHub link preview image | ⬜ Export from SVG (1280×640) |
+| `architecture-overview.png` | PNG target | Standalone architecture diagram | ⬜ Export from Mermaid Live Editor |
+| `workflow-overview.png` | PNG target | Sanitized workflow screenshot | ⬜ Capture from n8n (no credentials) |
+| `demo-thumbnail.png` | PNG target | Video thumbnail (1280×720) | ⬜ Capture frame from demo video |
+
+> **Note:** README currently references SVG placeholders. When PNG versions are ready, update README image paths from `.svg` to `.png` for sharper rendering on some platforms.
 
 ---
 
-## How to Generate Each Asset
+## How to Replace Each Placeholder
 
-### `banner.png` — README Hero Banner
+### `banner.png` ← replace `banner.svg`
 
-**Recommended size:** 1280×400 px (or 1200×300 px)
+**Target size:** 1280×400 px
 
-**Purpose:** First visual impression on the GitHub README. Should communicate voice AI + hotel operations + system architecture.
-
-**How to create:**
-
-1. **Option A — Canva (fastest)**
-   - Template: GitHub README banner or LinkedIn banner
-   - Include: project title, subtitle ("AI Voice Receptionist · Hotel Operations"), tech icons (Vapi, n8n, RAG)
-   - Color palette: dark professional background (#1A1A2E or #0F172A) with accent colors matching README badges
-   - Export as PNG
-
-2. **Option B — Figma**
-   - Frame: 1280×400
-   - Add architecture mini-diagram (Guest → Vapi → Tools → Backend)
-   - Export 2× PNG for retina clarity
-
-3. **Option C — Mermaid export**
-   - Render high-level architecture from [docs/architecture.md](../docs/architecture.md)
-   - Use [Mermaid Live Editor](https://mermaid.live) → Export PNG
-   - Add title bar in Canva/Figma overlay
-
-**Save to:** `assets/banner.png`
+1. Open `banner.svg` in browser or Figma for reference
+2. Create in Canva: dark background (#0F172A), project title, tech badges (Vapi · n8n · RAG · MCP)
+3. Export PNG → save as `assets/banner.png`
+4. Update README: `![Architecture Banner](assets/banner.png)`
 
 ---
 
-### `architecture-overview.png` — Architecture Diagram
+### `github-social-preview.png` ← replace `github-social-preview.svg`
 
-**Recommended size:** 1200×800 px
+**Target size:** 1280×640 px (required by GitHub)
 
-**Purpose:** Standalone architecture visual for README, CASE_STUDY, and LinkedIn posts.
-
-**How to create:**
-
-1. Open [docs/architecture.md](../docs/architecture.md)
-2. Copy the **High-Level Architecture** Mermaid block
-3. Paste into [Mermaid Live Editor](https://mermaid.live)
-4. Adjust theme (dark or neutral professional)
-5. Export PNG at 2× scale
-6. Optionally annotate layers in Figma (Voice · Orchestration · Backend · Downstream)
-
-**Save to:** `assets/architecture-overview.png`
+1. Export SVG at exact dimensions (browser screenshot or Figma)
+2. Save as `assets/github-social-preview.png`
+3. Upload: **GitHub → Repository → Settings → General → Social preview**
 
 ---
 
-### `demo-thumbnail.png` — Demo Video Thumbnail
+### `architecture-overview.png` ← replace `architecture-overview.svg`
 
-**Recommended size:** 1280×720 px (16:9)
+**Target size:** 1200×800 px
 
-**Purpose:** YouTube/Loom thumbnail and README demo section preview.
-
-**How to create:**
-
-1. Canva → YouTube Thumbnail template
-2. Include: "AI Voice Receptionist Demo", subtitle "Live Availability · RAG Policies · Booking Automation"
-3. Add play-button overlay icon (visual cue only)
-4. Match banner color palette for brand consistency
-5. Export PNG
-
-**Save to:** `assets/demo-thumbnail.png`
+1. Copy High-Level Architecture Mermaid block from [docs/architecture.md](../docs/architecture.md)
+2. Paste into [Mermaid Live Editor](https://mermaid.live) → export PNG
+3. Save as `assets/architecture-overview.png`
+4. Update README architecture image path
 
 ---
 
-### `github-social-preview.png` — GitHub Social Preview
+### `workflow-overview.png` ← replace `workflow-overview.svg`
 
-**Recommended size:** 1280×640 px (GitHub required dimensions)
+**Target size:** 1200×500 px (or match screenshot aspect ratio)
 
-**Purpose:** Image shown when the repository link is shared on social media, Slack, or LinkedIn.
+1. Open n8n workflow canvas (sanitized — no credential panels)
+2. Screenshot booking workflow overview
+3. Blur/redact any URLs, keys, or PII
+4. Save as `assets/workflow-overview.png`
 
-**How to create:**
-
-1. Canva → Custom size 1280×640
-2. Include: project title, one-line value prop, 3–4 tech badges (Vapi · n8n · RAG · MCP Tools)
-3. Keep text large — image renders small in link previews
-4. Export PNG
-
-**Upload to:** GitHub → Repository → Settings → General → Social preview image  
-**Also save to:** `assets/github-social-preview.png`
+See [docs/demo-checklist.md](../docs/demo-checklist.md) for sanitization rules.
 
 ---
 
-## Brand Consistency Tips
+### `demo-thumbnail.png` ← replace `demo-thumbnail.svg`
 
-- Use the same dark background and accent colors across all assets
-- Keep typography consistent (one heading font, one body font)
-- Do not include credentials, real data, or proprietary UI details in any asset
-- Prefer diagrams and icons over raw production screenshots for banner/social assets
+**Target size:** 1280×720 px
+
+1. Play [demo/AI-Voice-Receptionist-Demo.mp4](../demo/AI-Voice-Receptionist-Demo.mp4)
+2. Capture a compelling frame (voice UI or workflow moment — sanitized)
+3. Optionally add play-button overlay in Canva
+4. Save as `assets/demo-thumbnail.png`
+5. Update README demo thumbnail link
+
+---
+
+## Brand Consistency
+
+- Dark background palette: `#0F172A`, `#1A1A2E`
+- Accent colors matching README badges: orange `#FF6B35`, purple `#5B4FFF`, pink `#EA4B71`, blue `#2D9CDB`, green `#00C896`
+- No credentials, real data, or proprietary UI details in any asset
 
 ---
 
 ## Related
 
 - [Demo checklist](../docs/demo-checklist.md) — full screenshot, video, and GIF tracking
-- [Screenshots folder](../screenshots/README.md) — sanitized production UI captures
-- [Demo folder](../demo/README.md) — video and GIF files
+- [GitHub profile setup](../docs/github-profile-setup.md) — social preview upload instructions
+- [screenshots/](../screenshots/) — sanitized production UI captures

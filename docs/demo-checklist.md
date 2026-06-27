@@ -92,7 +92,7 @@
 
 | # | Asset | Filename | Status | Notes |
 |---|-------|----------|--------|-------|
-| 14 | Full system demo (voice → availability → booking) | `demo/walkthrough.mp4` | ⬜ | 2–4 minutes; host on YouTube or Loom |
+| 14 | Full system demo (voice → availability → booking) | `demo/AI-Voice-Receptionist-Demo.mp4` | ✅ | ~37 MB; in-repo; optional YouTube/Loom for external sharing |
 | 15 | Demo thumbnail | `assets/demo-thumbnail.png` | ⬜ | Used for video embed and README |
 
 **Content outline:**

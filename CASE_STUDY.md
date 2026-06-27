@@ -214,7 +214,7 @@ These trade-offs reflect **pragmatic production thinking** — optimize for main
 | **Observability** | Structured logging, tool-call tracing, workflow monitoring dashboards |
 | **Human handoff** | Escalation path to live staff for complex or high-value inquiries |
 | **Language support** | Multi-language voice and knowledge base coverage |
-| **Demo assets** | End-to-end video walkthrough and sanitized screenshots (see [demo checklist](docs/demo-checklist.md)) |
+| **Demo assets** | Sanitized screenshots and GIFs (see [demo checklist](docs/demo-checklist.md)); video available at [demo/AI-Voice-Receptionist-Demo.mp4](demo/AI-Voice-Receptionist-Demo.mp4) |
 
 ---
 
@@ -244,7 +244,8 @@ This case study describes architecture and engineering decisions. It does not in
 - Full proprietary business logic
 
 For technical depth, see [docs/architecture.md](docs/architecture.md).  
-For demo asset planning, see [docs/demo-checklist.md](docs/demo-checklist.md).
+For the demo video, see [demo/AI-Voice-Receptionist-Demo.mp4](demo/AI-Voice-Receptionist-Demo.mp4).  
+For interview prep, see [docs/interview-talking-points.md](docs/interview-talking-points.md).
 
 ---
 

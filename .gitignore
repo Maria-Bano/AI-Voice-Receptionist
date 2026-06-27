@@ -13,6 +13,7 @@ secrets/
 # n8n exports (keep private)
 
 *.json
+!examples/*.json
 
 # Logs
 

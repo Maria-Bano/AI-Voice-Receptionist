@@ -1,15 +1,20 @@
 # Examples
 
-This folder is reserved for **sanitized example artifacts** that illustrate patterns used in the AI Voice Receptionist project.
+Sanitized example artifacts illustrating engineering patterns used in the AI Voice Receptionist project.
 
-## What May Appear Here (Future)
+## Available Examples
 
-| Example type | Description |
-|--------------|-------------|
-| Tool schema illustrations | Sanitized MCP-style tool input/output contracts (no proprietary logic) |
-| RAG document samples | Fictional hotel policy excerpts used for demonstration |
-| API response shapes | Redacted example JSON structures (no real endpoints or keys) |
-| Sheets layout templates | Fictional inventory column structure |
+| File | Description |
+|------|-------------|
+| [tool-contract-example.md](tool-contract-example.md) | Fictional MCP-style tool input/output contracts |
+| [sample-api-request.json](sample-api-request.json) | Fictional availability check request body |
+| [sample-api-response.json](sample-api-response.json) | Fictional availability response with alternatives |
+
+All examples use **fictional data** — no real endpoints, credentials, or production logic.
+
+## Purpose
+
+Examples support technical interviews and client conversations by showing **patterns and contracts** — not production implementation.
 
 ## What Will NOT Appear Here
 
@@ -19,16 +24,8 @@ This folder is reserved for **sanitized example artifacts** that illustrate patt
 - Real customer or operational data
 - Full proprietary business logic
 
-## Purpose
-
-Examples support technical interviews and client conversations by showing **patterns and contracts** — not production implementation.
-
 ## Related
 
 - [docs/architecture.md](../docs/architecture.md) — full system design
+- [docs/interview-talking-points.md](../docs/interview-talking-points.md) — verbal walkthrough scripts
 - [CASE_STUDY.md](../CASE_STUDY.md) — engineering narrative
-- [docs/demo-checklist.md](../docs/demo-checklist.md) — media asset planning
-
-## Status
-
-⬜ No example files committed yet. Add sanitized artifacts as the portfolio matures.

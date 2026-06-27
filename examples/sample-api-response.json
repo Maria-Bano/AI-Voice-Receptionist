@@ -1,0 +1,40 @@
+{
+  "_comment": "Fictional example only. No real endpoints, credentials, or production data.",
+  "status": "success",
+  "data": {
+    "availability_status": "partial",
+    "available_rooms": [
+      {
+        "room_type": "standard_queen",
+        "display_name": "Standard Queen Room",
+        "nightly_rate": 149.0,
+        "max_occupancy": 2,
+        "available_count": 4
+      }
+    ],
+    "alternatives": [
+      {
+        "room_type": "deluxe_king",
+        "display_name": "Deluxe King Room",
+        "nightly_rate": 189.0,
+        "max_occupancy": 2,
+        "available_count": 1,
+        "reason": "Limited availability for requested dates"
+      },
+      {
+        "room_type": "suite",
+        "display_name": "Executive Suite",
+        "nightly_rate": 289.0,
+        "max_occupancy": 4,
+        "available_count": 2,
+        "reason": "Higher capacity option for guest party"
+      }
+    ],
+    "validation": {
+      "dates_valid": true,
+      "conflicts_checked": true,
+      "pending_reservations_considered": true
+    }
+  },
+  "message": "Standard Queen available. Deluxe King and Suite offered as alternatives."
+}
